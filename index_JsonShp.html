@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/topojson-client@3"></script>
+    <script src="https://unpkg.com/d3-array@1"></script>
+    <script src="https://unpkg.com/d3-collection@1"></script>
+    <script src="https://unpkg.com/d3-dispatch@1"></script>
+    <script src="https://unpkg.com/d3-request@1"></script>
+    <script src="https://unpkg.com/d3-timer@1"></script>
+    
+    <script src='js/wrldshp.js'></script>
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/proj4.js"></script>
+	
+  </head>
+  
+  
+  <body>
+  
+    <a-scene>
+	
+	
+	<a-entity position="0 0 0" world="src: data/W_SingleP.json; topojson: true;"></a-entity>
+	
+	<!--   <a-entity position="0 0 0" world="src: data/W_SinglePGeoJ.json; topojson: false;"></a-entity>-->
+
+	<!--   <a-entity position="0 0 0" world="src: data/ne_110m_land_SP_Topo.json; topojson: true;"></a-entity> Comment line 45 and uncomment 42 in JS -->     
+
+	
+    </a-scene>
+  </body>
+</html>
